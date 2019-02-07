@@ -1,1 +1,16 @@
+#DAFT DRAFT:
 
+# Planar Graph:
+C = {}
+|R| = |E| - |V| + 1
+QUEUE = {v(1), v(2),...,v(n)}
+
+WHILE (|R| != |C|) DO
+  v  = pop.QUEUE
+  WHIL (N(v) != EMPTY) DO
+    w = pop.N(v)
+    remove(e(w,v))
+    IF( PID.shortestDistance() == TRUE)
+      ADD ( getSET(PID:shortestDistance())  , C )
+     
+    
